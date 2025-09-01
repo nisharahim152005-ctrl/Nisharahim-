@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nisha R | Unique Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: black;
+      color: #fff;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: white;
+      height: 100vh;
+      position: fixed;
+      top: 0; left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0;
+    }
+
+    .sidebar h2 {
+      color: black;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #e94560;
+      margin: 15px 0;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #e94560;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 220px;
+      padding: 40px;
+      width: 100%;
+    }
+
+    .section {
+      margin-bottom: 80px;
+    }
+
+    h1, h2 {
+      color: #e94560;
+      margin-bottom: 15px;
+    }
+
+    /* Timeline Style */
+    .timeline {
+      position: relative;
+      margin: 20px 0;
+      padding-left: 30px;
+      border-left: 3px solid #e94560;
+    }
+
+    .timeline div {
+      margin: 20px 0;
+      padding-left: 15px;
+    }
+
+    .timeline div::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      width: 15px;
+      height: 15px;
+      background: #e94560;
+      border-radius: 50%;
+      margin-top: 5px;
+    }
+
+    /* Skills */
+    .skills span {
+      display: inline-block;
+      background: #e94560;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: black;
+    }
+
+    /* Cards */
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background: #0f3460;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>DP</h2>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+   <section class="hero">
+   <center> <img src="nisha.jpg" alt="Profile Photo" hight="150",width="150"/></center>
+    <div class="section" id="about">
+      <h1>About Me</h1>
+      <div class="card">
+        <p> I’m <b>Nisha R</b>,I'm a Bachelor of Computer Application student with a passion for creative web developer passionate about crafting unique digital experiences .</p>
+      </div>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Python</span>
+      </div>
+    </div>
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="card"> Portfolio Website</div>
+      <div class="card"> Creative Landing Page</div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:nisharahim152005@gmail.com" style="color:#e94560;">nisharahim152005@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <p> THANKS TO ALL  </p>
+    </footer>
+  </div>
+
+</body>
+</html>
